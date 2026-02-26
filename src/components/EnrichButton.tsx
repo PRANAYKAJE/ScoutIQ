@@ -11,7 +11,7 @@ interface EnrichButtonProps {
   onLoading?: (loading: boolean) => void;
 }
 
-export default function EnrichButton({ domain, onEnrich, variant = "primary" }: EnrichButtonProps) {
+export default function EnrichButton({ domain, onEnrich, variant = "primary", onLoading }: EnrichButtonProps) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
